@@ -20,7 +20,7 @@ body {
     "Droid Sans",
     "Helvetica Neue",
     sans-serif;
-  background: #182435;
+  background: #181A2E;
   color: white;
 }
 
@@ -31,4 +31,13 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.main{
+  .header{
+    .nav{
+      color:white;
+      font-weight: 500;
+      // font-size: 1.2rem;
+    }
+  }
 }
