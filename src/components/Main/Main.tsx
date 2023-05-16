@@ -1,6 +1,5 @@
 import React from "react";
 import { Flex, Box } from "@chakra-ui/react";
-import { useRouter } from "next/router";
 import Header from "../Header/Header";
 import bg from "../../assets/Slide_Title.jpg";
 import title from "../../assets/Title.png";
@@ -8,11 +7,6 @@ import title from "../../assets/Title.png";
 //TODO: add animation
 
 export default function Main() {
-  const router = useRouter();
-  const goPage = (page: any) => {
-    router.push(page);
-  };
-
   return (
     <Box
       className="min-h-[100vh] relative overflow-hidden flex flex-col items-center"
