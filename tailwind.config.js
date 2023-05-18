@@ -11,6 +11,7 @@ module.exports = {
         iconBlack: "#191A23",
         footer: "#474859",
         black: "#191A23",
+        bg: "#181A2E",
       },
       boxShadow: {
         blue: "0px 0px 10px rgba(33, 122, 255, 0.25)",

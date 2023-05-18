@@ -26,7 +26,7 @@ export default function Main() {
         alt="title"
         className="w-9/12 2xl:w-10/12"
       />
-      <div className="w-4/5 h-36 justify-center flex flex-col text-center items-center border-2 rounded-3xl gap-2 text-lg p-10 border-yellow">
+      <div className="relative w-4/5 h-full justify-center flex flex-col text-center items-center border-2 rounded-3xl gap-2 text-lg p-10 pb-16  border-yellow">
         <div className="max-w-6xl">
           程式設計馬拉松（英語：hackathon，又譯為駭客松），又稱駭客日（hack
           day）、駭客節（hackfest）或程式設計節（codefest）
@@ -34,6 +34,9 @@ export default function Main() {
         <div className="max-w-6xl">
           是一個流傳於駭客（hacker）當中的新詞彙。程式設計馬拉松是一種活動。
         </div>
+        <button className="z-30 absolute -bottom-10 bg-white text-black rounded-full w-52 border-8 border-bg p-4 text-lg font-semibold hover:bg-gray-300 transition-all">
+          報名
+        </button>
       </div>
     </Box>
   );
