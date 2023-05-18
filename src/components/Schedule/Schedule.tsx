@@ -4,7 +4,7 @@ import TaskCard from "./Card";
 
 export default function Schedule() {
   return (
-    <Section title="SCHEDULE" subTitle="活動日程">
+    <Section title="SCHEDULE" subTitle="活動日程" id="Schedule">
       <div className="w-4/5">
         <TaskCard
           name="訓練營"

@@ -47,7 +47,7 @@ export default function Judges() {
     },
   ];
   return (
-    <Section title="JUDGES" subTitle="裁判群">
+    <Section title="JUDGES" subTitle="裁判群" id="Judges">
       <div className="w-4/5 grid grid-cols-4 gap-5">
         {JudgesArray.map((item, idx) => (
           <ProfileCard

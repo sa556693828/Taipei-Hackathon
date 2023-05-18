@@ -15,6 +15,7 @@ export default function Main() {
       bgRepeat="no-repeat"
       bgPos="top"
       bgSize="100%"
+      id="Main"
     >
       <Header />
       <img src={title.src} className="w-9/12 2xl:w-10/12" />

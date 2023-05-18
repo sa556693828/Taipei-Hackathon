@@ -1,14 +1,19 @@
 import React from "react";
 import { Divider } from "@chakra-ui/react";
 import Logo from "@/assets/Logo.svg";
+import { useRouter } from "next/router";
 export default function Desktop() {
   const buttonStyle =
     "text-xs lg:w-16 xl:w-20 xl:text-md 2xl:w-32 2xl:text-xl flex items-center justify-center hover:opacity-80";
+  const router = useRouter();
+  const goPage = (page: string) => {
+    router.push(page);
+  };
 
   return (
     <div className="w-full main hidden md:block">
       <header className="flex justify-between header">
-        <div className="w-44">
+        <div className="w-44 cursor-pointer" onClick={() => goPage("/")}>
           <img src={Logo.src} alt="logo" className="h-full w-full" />
         </div>
         <div className="flex flex-1 justify-center items-center gap-2 xl:gap-10 nav px-10">
