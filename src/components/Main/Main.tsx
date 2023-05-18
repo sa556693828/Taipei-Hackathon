@@ -1,8 +1,8 @@
 import React from "react";
 import { Flex, Box } from "@chakra-ui/react";
 import Header from "../Header/Header";
-import bg from "../../assets/Slide_Title.jpg";
-import title from "../../assets/Title.png";
+import bg from "@/assets/Slide_Title.jpg";
+import title from "@/assets/Title.png";
 
 //TODO: add animation
 

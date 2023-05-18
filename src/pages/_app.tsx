@@ -5,6 +5,7 @@ import Head from "next/head";
 import createCache from "@emotion/cache";
 import { CacheProvider } from "@emotion/react";
 import theme from "@/components/theme";
+import Icons from "@/components/icons/Icons";
 
 const emotionCache = createCache({
   key: "style",
@@ -33,6 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <CacheProvider value={emotionCache}>
         <ChakraProvider theme={theme}>
           <Component {...pageProps} />
+          <Icons />
         </ChakraProvider>
       </CacheProvider>
     </>

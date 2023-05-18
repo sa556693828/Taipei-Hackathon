@@ -1,6 +1,6 @@
 import React from "react";
 import { Divider } from "@chakra-ui/react";
-import Logo from "../../assets/Logo.svg";
+import Logo from "@/assets/Logo.svg";
 export default function Desktop() {
   const buttonStyle =
     "text-xs lg:w-16 xl:w-20 xl:text-md 2xl:w-32 2xl:text-xl flex items-center justify-center hover:opacity-80";
