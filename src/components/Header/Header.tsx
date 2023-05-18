@@ -1,25 +1,26 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 // import Image from 'next/dist/client/image';
 import { Button, Divider, Flex } from "@chakra-ui/react";
-// import Mobile from "./HeaderMobile";
-// import Desktop from "./HeaderDesktop";
 import { useRouter } from "next/router";
 import Desktop from "./HeaderDesktop";
+import Mobile from "./HeaderMobile";
 
 export default function Header() {
   const router = useRouter();
-
+  const goPage = (page: string) => {
+    router.push(page);
+  };
   return (
     <>
       <Flex
         justify="space-between"
         align="center"
-        px={{ base: "8rem" }}
+        px={{ base: "2rem", lg: "8rem" }}
         overflow="hidden"
-        className="z-50 h-20 w-full bg-transparent shadow-top text-white"
+        className="z-50 h-20 w-full bg-transparent text-white"
       >
-        <Desktop />
-        {/* <Mobile goPage={goPage} ifAddressHasNFT={ifAddressHasNFT} /> */}
+        <Desktop goPage={goPage} />
+        <Mobile goPage={goPage} />
       </Flex>
     </>
   );

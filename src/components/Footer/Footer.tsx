@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="w-44 cursor-pointer" onClick={() => goPage("/")}>
         <Image src={Logo.src} alt="logo" width="300" height="100" />
       </div>
-      <div className="flex flex-1 justify-start items-center gap-10 pl-10 text-base">
+      {/* <div className="flex justify-start items-center gap-10 pl-10 text-base">
         <Link href="/#OverView" passHref>
           <div className={buttonStyle}>OVERVIEW</div>
         </Link>
@@ -35,8 +35,10 @@ export default function Footer() {
         <Link href="/#FAQ" passHref>
           <div className={buttonStyle}>FAQ</div>
         </Link>
+      </div> */}
+      <div className="font-medium text-white/60 flex justify-end">
+        © 2023 TAIPEIHACKATHON.
       </div>
-      <div className="font-medium text-white/60">© 2023 TAIPEIHACKATHON.</div>
     </footer>
   );
 }

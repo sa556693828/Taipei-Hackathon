@@ -18,6 +18,16 @@ export default function Document() {
           }
           rel="stylesheet"
         />
+        <meta property="og:title" content="Taipei Hackathon" />
+        <meta property="og:site_name" content="Taipei Hackathon" />
+        {/* <meta property="og:url" content="" /> */}
+        <meta property="og:description" content="Taipei Hackathon" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          // content="https:// /main.png"
+        />
       </Head>
       <body>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />

@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Box } from "@chakra-ui/react";
 import Header from "../Header/Header";
-import bg from "@/assets/Slide_Title.jpg";
+import bg from "@/assets/Slide_Title.svg";
 import title from "@/assets/Title.png";
 import Image from "next/image";
 
@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function Main() {
   return (
     <Box
-      className="min-h-[100vh] relative overflow-hidden flex flex-col items-center"
+      className="relative overflow-hidden flex flex-col items-center"
       color="white"
       bgImage={bg.src}
       bgRepeat="no-repeat"
@@ -24,17 +24,16 @@ export default function Main() {
         width="3000"
         height="3000"
         alt="title"
-        className="w-9/12 2xl:w-10/12"
+        className="w-10/12 2xl:w-10/12"
       />
-      <div className="relative w-4/5 h-full justify-center flex flex-col text-center items-center border-2 rounded-3xl gap-2 text-lg p-10 pb-16  border-yellow">
-        <div className="max-w-6xl">
+      <div className="relative w-4/5 my-9 justify-center flex flex-col text-center items-center border-2 rounded-3xl gap-2 text-lg p-6 pb-10  border-yellow">
+        <div className="font-normal text-base">
           程式設計馬拉松（英語：hackathon，又譯為駭客松），又稱駭客日（hack
-          day）、駭客節（hackfest）或程式設計節（codefest）
-        </div>
-        <div className="max-w-6xl">
+          day）、駭客節（hackfest）或程式設計節（codefest），
+          {/* <br /> */}
           是一個流傳於駭客（hacker）當中的新詞彙。程式設計馬拉松是一種活動。
         </div>
-        <button className="z-30 absolute -bottom-10 bg-white text-black rounded-full w-52 border-8 border-bg p-4 text-lg font-semibold hover:bg-gray-300 transition-all">
+        <button className="absolute -bottom-10 bg-white text-black rounded-full w-52 border-8 border-bg p-3 text-lg font-semibold hover:bg-gray-300 transition-all">
           報名
         </button>
       </div>
