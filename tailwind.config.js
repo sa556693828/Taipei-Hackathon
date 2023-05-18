@@ -11,6 +11,11 @@ module.exports = {
         iconBlack: "#191A23",
         footer: "#474859",
       },
+      boxShadow: {
+        blue: "0px 0px 10px rgba(33, 122, 255, 0.25)",
+        yellow: "0px 0px 10px rgba(239, 184, 41, 0.25)",
+        green: "0px 0px 10px rgba(37, 223, 178, 0.25)",
+      },
     },
   },
   plugins: [],
