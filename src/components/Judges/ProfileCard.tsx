@@ -1,5 +1,6 @@
 import React from "react";
 import SvgIcon from "@/components/SvgIcon/SvgIcon";
+import Image from "next/image";
 
 export default function ProfileCard(props: {
   avatar: string;
@@ -11,7 +12,7 @@ export default function ProfileCard(props: {
 }) {
   return (
     <div className="rounded-[48px] flex flex-col items-center justify-center pt-10 bg-[#23252D]">
-      <img src={props.avatar} width="120" />
+      <Image src={props.avatar} alt="avatar" width="120" height="120" />
       <div className="mt-5 text-lg text-center">
         {props.name}
         <div className="font-medium">{props.company}</div>

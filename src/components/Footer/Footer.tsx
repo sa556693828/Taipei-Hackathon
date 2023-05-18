@@ -1,6 +1,8 @@
 import React from "react";
 import Logo from "@/assets/Logo.svg";
 import { useRouter } from "next/router";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const buttonStyle =
@@ -12,27 +14,27 @@ export default function Footer() {
   return (
     <footer className="flex items-center bg-[#ffffff]/20 px-32 py-4">
       <div className="w-44 cursor-pointer" onClick={() => goPage("/")}>
-        <img src={Logo.src} alt="logo" className="h-full w-full" />
+        <Image src={Logo.src} alt="logo" width="300" height="100" />
       </div>
       <div className="flex flex-1 justify-start items-center gap-10 pl-10 text-base">
-        <a href="/#OverView" className={buttonStyle}>
-          OVERVIEW
-        </a>
-        <a href="/#Prizes" className={buttonStyle}>
-          PRIZES
-        </a>
-        <a href="/#Schedule" className={buttonStyle}>
-          SCHEDULE
-        </a>
-        <a href="/#Judges" className={buttonStyle}>
-          JUDGES
-        </a>
-        <a href="/#Partners" className={buttonStyle}>
-          PARTNERS
-        </a>
-        <a href="/#FAQ" className={buttonStyle}>
-          FAQ
-        </a>
+        <Link href="/#OverView" passHref>
+          <div className={buttonStyle}>OVERVIEW</div>
+        </Link>
+        <Link href="/#Prizes" passHref>
+          <div className={buttonStyle}>PRIZES</div>
+        </Link>
+        <Link href="/#Schedule" passHref>
+          <div className={buttonStyle}>SCHEDULE</div>
+        </Link>
+        <Link href="/#Judges" passHref>
+          <div className={buttonStyle}>JUDGES</div>
+        </Link>
+        <Link href="/#Partners" passHref>
+          <div className={buttonStyle}>PARTNERS</div>
+        </Link>
+        <Link href="/#FAQ" passHref>
+          <div className={buttonStyle}>FAQ</div>
+        </Link>
       </div>
       <div className="font-medium text-white/60">© 2023 TAIPEIHACKATHON.</div>
     </footer>

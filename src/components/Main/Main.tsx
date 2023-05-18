@@ -3,6 +3,7 @@ import { Flex, Box } from "@chakra-ui/react";
 import Header from "../Header/Header";
 import bg from "@/assets/Slide_Title.jpg";
 import title from "@/assets/Title.png";
+import Image from "next/image";
 
 //TODO: add animation
 
@@ -18,7 +19,13 @@ export default function Main() {
       id="Main"
     >
       <Header />
-      <img src={title.src} className="w-9/12 2xl:w-10/12" />
+      <Image
+        src={title.src}
+        width="3000"
+        height="3000"
+        alt="title"
+        className="w-9/12 2xl:w-10/12"
+      />
       <div className="w-4/5 h-36 justify-center flex flex-col text-center items-center border-2 rounded-3xl gap-2 text-lg p-10 border-yellow">
         <div className="max-w-6xl">
           程式設計馬拉松（英語：hackathon，又譯為駭客松），又稱駭客日（hack
