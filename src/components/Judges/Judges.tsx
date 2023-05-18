@@ -48,7 +48,7 @@ export default function Judges() {
   ];
   return (
     <Section title="JUDGES" subTitle="裁判群" id="Judges">
-      <div className="w-4/5 grid grid-cols-4 gap-5">
+      <div className="grid w-4/5 grid-cols-1 gap-5 lg:grid-cols-4">
         {JudgesArray.map((item, idx) => (
           <ProfileCard
             avatar={item.avatar}

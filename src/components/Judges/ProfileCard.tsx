@@ -11,21 +11,21 @@ export default function ProfileCard(props: {
   telegram?: string;
 }) {
   return (
-    <div className="rounded-[48px] flex flex-col items-center justify-center pt-10 bg-[#23252D]">
+    <div className="flex flex-col items-center justify-center rounded-[48px] bg-[#23252D] pt-10">
       <Image src={props.avatar} alt="avatar" width="120" height="120" />
-      <div className="mt-5 text-lg text-center">
+      <div className="mt-5 text-center text-lg">
         {props.name}
         <div className="font-medium">{props.company}</div>
       </div>
-      <div className="py-10 flex justify-between w-2/3">
-        <div className="bg-black p-3 rounded-full hover:bg-white/20 transition-all cursor-pointer">
-          <SvgIcon width={25} height={25} iconName="icon-twitter" />
+      <div className="flex w-2/3 justify-center gap-6 py-10 lg:justify-between lg:gap-0">
+        <div className="cursor-pointer rounded-full bg-black p-3 transition-all hover:bg-white/20">
+          <SvgIcon width={20} height={20} iconName="icon-twitter" />
         </div>
-        <div className="bg-black p-3 rounded-full">
-          <SvgIcon width={25} height={25} iconName="icon-discord" />
+        <div className="rounded-full bg-black p-3">
+          <SvgIcon width={20} height={20} iconName="icon-discord" />
         </div>
-        <div className="bg-black p-3 rounded-full">
-          <SvgIcon width={25} height={25} iconName="icon-telegram" />
+        <div className="rounded-full bg-black p-3">
+          <SvgIcon width={20} height={20} iconName="icon-telegram" />
         </div>
       </div>
     </div>

@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <>
       <Main />
-      {/* <OverView /> */}
-      {/* <Prizes /> */}
+      <OverView />
+      <Prizes />
       <Schedule />
-      {/* <Judges /> */}
+      <Judges />
       <Partners />
       <FAQ />
       <Footer />

@@ -14,7 +14,7 @@ export default function ViewCard(props: {
 }) {
   return (
     <div
-      className={`border-2 h-full rounded-3xl p-10 flex flex-col gap-2 border-${props.color} w-full shadow-${props.color}`}
+      className={`border-2 h-full rounded-[48px] p-10 flex flex-col gap-2 border-${props.color} w-full shadow-${props.color}`}
     >
       <div className="text-4xl mb-16">{props.title}</div>
       <div className="flex-1 py-4">

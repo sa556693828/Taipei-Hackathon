@@ -23,7 +23,7 @@ export default function Mobile(props: any) {
         display={{ base: "flex", lg: "none" }}
         className="w-full flex-col items-center"
       >
-        <div className="flex justify-between items-center w-full">
+        <div className="flex w-full items-center justify-between">
           <div className="cursor-pointer pl-3" onClick={() => goPage("/")}>
             <Image src={Logo.src} alt="logo" width="150" height="100" />
           </div>
@@ -36,7 +36,7 @@ export default function Mobile(props: any) {
             onMouseOver={() => setHover(true)}
             onMouseOut={() => setHover(false)}
           >
-            <HamburgerIcon color={hover ? "darkcyan" : "white"} w={6} h={6} />
+            <HamburgerIcon w={6} h={6} />
           </Button>
         </div>
         <Divider pt="3" w="90%" />
@@ -44,40 +44,31 @@ export default function Mobile(props: any) {
 
       <Drawer isOpen={isOpen} size="xs" placement="right" onClose={onClose}>
         <DrawerOverlay />
-        <DrawerContent className="bg-gradient-to-b flex gap-4 items-center from-[#9CDEF5] via-[#9CDEF5]  to-[#FF99C7] ">
-          <div className="my-4">
-            {/* <LinearButton text="Connect Wallet" className="w-60 rounded-2xl" /> */}
-          </div>
-          <div
-            className="strokeMobileNavbar w-full bg-white h-11 flex items-center justify-center"
-            data-stroke="Go to mint"
-          >
-            Go to mint
-          </div>
-          <div
-            className="strokeMobileNavbar w-full h-11 flex items-center justify-center"
+        <DrawerContent className="flex items-center gap-4 bg-bg">
+          {/* <div
+            className="strokeMobileNavbar flex h-11 w-full items-center justify-center"
             data-stroke="Story"
           >
             Story
           </div>
           <div
-            className="strokeMobileNavbar w-full h-11 flex items-center justify-center"
+            className="strokeMobileNavbar flex h-11 w-full items-center justify-center"
             data-stroke="About"
           >
             About
           </div>
           <div
-            className="strokeMobileNavbar w-full h-11 flex items-center justify-center"
+            className="strokeMobileNavbar flex h-11 w-full items-center justify-center"
             data-stroke="Seals"
           >
             Seals
           </div>
           <div
-            className="strokeMobileNavbar w-full h-11 flex items-center justify-center"
+            className="strokeMobileNavbar flex h-11 w-full items-center justify-center"
             data-stroke="ShowRoom"
           >
             ShowRoom
-          </div>
+          </div> */}
         </DrawerContent>
       </Drawer>
     </>

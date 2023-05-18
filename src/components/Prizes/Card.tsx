@@ -9,7 +9,7 @@ export default function PrizesCard(props: {
 }) {
   return (
     <div
-      className={`border-2 rounded-full w-full p-4 flex gap-2 border-${props.color} items-center`}
+      className={`flex w-full gap-2 rounded-full border-2 p-4 border-${props.color} items-center`}
     >
       <Image src={inch.src} width="64" height="64" alt="avatar" />
       <div className="flex flex-col">

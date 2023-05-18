@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function Main() {
   return (
     <Box
-      className="relative overflow-hidden flex flex-col items-center"
+      className="relative flex flex-col items-center overflow-hidden"
       color="white"
       bgImage={bg.src}
       bgRepeat="no-repeat"
@@ -26,14 +26,14 @@ export default function Main() {
         alt="title"
         className="w-10/12 2xl:w-10/12"
       />
-      <div className="relative w-4/5 my-9 justify-center flex flex-col text-center items-center border-2 rounded-3xl gap-2 text-lg p-6 pb-10  border-yellow">
-        <div className="font-normal text-base">
+      <div className="relative my-9 flex w-4/5 flex-col items-center justify-center gap-2 rounded-3xl border-2 border-yellow p-6 pb-10 text-center  text-lg">
+        <div className="text-base font-normal">
           程式設計馬拉松（英語：hackathon，又譯為駭客松），又稱駭客日（hack
           day）、駭客節（hackfest）或程式設計節（codefest），
           {/* <br /> */}
           是一個流傳於駭客（hacker）當中的新詞彙。程式設計馬拉松是一種活動。
         </div>
-        <button className="absolute -bottom-10 bg-white text-black rounded-full w-52 border-8 border-bg p-3 text-lg font-semibold hover:bg-gray-300 transition-all">
+        <button className="absolute -bottom-10 w-52 rounded-full border-8 border-bg bg-white p-3 text-lg font-semibold text-black transition-all hover:bg-gray-300">
           報名
         </button>
       </div>

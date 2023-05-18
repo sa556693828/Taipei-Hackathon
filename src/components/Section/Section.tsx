@@ -7,9 +7,9 @@ export default function Section(props: {
   id?: string;
 }) {
   return (
-    <div className="flex flex-col items-center h-full py-10" id={props.id}>
+    <div className="flex h-full flex-col items-center py-10" id={props.id}>
       <div className="text-2xl font-bold leading-[56px]">{props.title}</div>
-      <div className="text-5xl font-extrabold leading-[64px] mb-14">
+      <div className="mb-14 text-4xl font-extrabold leading-[64px]">
         {props.subTitle}
       </div>
       {props.children}
