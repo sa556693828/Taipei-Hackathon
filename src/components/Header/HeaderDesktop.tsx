@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Divider } from "@chakra-ui/react";
 import Logo from "@/assets/Logo.svg";
-import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 export default function Desktop(props: any) {

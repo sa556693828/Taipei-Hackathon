@@ -18,6 +18,10 @@ export default function Document() {
           }
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet"
+        />
         <meta property="og:title" content="Taipei Hackathon" />
         <meta property="og:site_name" content="Taipei Hackathon" />
         {/* <meta property="og:url" content="" /> */}
