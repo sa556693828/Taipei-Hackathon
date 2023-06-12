@@ -1,13 +1,16 @@
 import React from "react";
-import { Flex, Box } from "@chakra-ui/react";
+import { Flex, Box, useDisclosure } from "@chakra-ui/react";
 import Header from "../Header/Header";
 import bg from "@/assets/Slide_Title.svg";
 import title from "@/assets/Title.png";
 import Image from "next/image";
+import InputModal from "../InputModal/InputModal";
 
 //TODO: add animation
 
 export default function Main() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <Box
       className="relative flex flex-col items-center overflow-hidden"
@@ -33,9 +36,13 @@ export default function Main() {
           {/* <br /> */}
           是一個流傳於駭客（hacker）當中的新詞彙。程式設計馬拉松是一種活動。
         </div>
-        <button className="absolute -bottom-10 w-52 rounded-full border-8 border-bg bg-white p-3 text-lg font-semibold text-black transition-all hover:bg-gray-300">
+        <button
+          className="absolute -bottom-10 w-52 rounded-full border-8 border-bg bg-white p-3 text-lg font-semibold text-black transition-all hover:bg-gray-300"
+          onClick={onOpen}
+        >
           報名
         </button>
+        <InputModal isOpen={isOpen} onClose={onClose} />
       </div>
     </Box>
   );

@@ -1,10 +1,14 @@
 import React from "react";
-import { Box, Divider } from "@chakra-ui/react";
+import { Box, Divider, useDisclosure } from "@chakra-ui/react";
 import Logo from "@/assets/Logo.svg";
 import Link from "next/link";
 import Image from "next/image";
+import InputModal from "../InputModal/InputModal";
+
 export default function Desktop(props: any) {
   const { goPage } = props;
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   const buttonStyle =
     "text-xs lg:w-16 xl:w-20 xl:text-md 2xl:w-32 2xl:text-xl flex items-center justify-center hover:opacity-80";
 
@@ -35,7 +39,13 @@ export default function Desktop(props: any) {
           </Link>
         </div>
         <div className="flex w-44 items-center">
-          <button className="h-5/6 w-full rounded-[56px] border">報名</button>
+          <button
+            className="h-5/6 w-full rounded-[56px] border"
+            onClick={onOpen}
+          >
+            報名
+          </button>
+          <InputModal isOpen={isOpen} onClose={onClose} />
         </div>
       </header>
       <Divider pt="3" />
